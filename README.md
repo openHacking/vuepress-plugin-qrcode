@@ -9,7 +9,15 @@ Vuepress Plugin Qrcode
 English| [简体中文](./README-zh.md)
 
 ## Introduction
+
 Vuepress Plugin Qrcode is a Vuepress plugin that displays the QR code of the current URL for mobile devices to scan.
+
+## Documentation
+
+- [Official Demo](https://openhacking.github.io/VuePressPluginQRCodeDemo/)
+- [Community case](https://dushusir.github.io/blog/)
+
+![Demo](./assets/vuepress-plugin-qrcode-demo.png)
 
 ## Installation
 
@@ -56,3 +64,8 @@ Set the size of the QR code, the possible values are
     Or set a specific value you think is appropriate, such as
     - `80`: Represents 80px * 80px
     - `120`: Represents 120px * 120px
+
+## Resources
+
+- [vuepress](https://vuepress.vuejs.org/)
+- [vuepress plugins](https://github.com/vuepress/awesome-vuepress#plugins)

@@ -1,6 +1,7 @@
 module.exports = {
     title: 'VuePress Plugin QRCode',
     description: 'Just playing around',
+    base: '/VuePressPluginQRCodeDemo/',
     "plugins": [
         // Here use require to import local files, please use the plug-in name for real use: "qrcode"
         [require('../../index'),{

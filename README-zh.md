@@ -9,7 +9,15 @@ Vuepress Plugin Qrcode
 简体中文 | [English](./README.md)
 
 ## 介绍
+
 Vuepress Plugin Qrcode是一个展示当前网址二维码供移动设备扫描的Vuepress插件
+
+## 文档
+
+- [官方Demo](https://openhacking.github.io/VuePressPluginQRCodeDemo/)
+- [社区案例](https://dushusir.github.io/blog/)
+
+![Demo](./assets/vuepress-plugin-qrcode-demo.png)
 
 ## 安装
 
@@ -56,3 +64,8 @@ module.exports = {
     或者设定你认为合适的具体数值，比如
     - `80`：代表80px * 80px
     - `120`：代表120px * 120px
+
+## 资源
+
+- [vuepress](https://vuepress.vuejs.org/)
+- [vuepress plugins](https://github.com/vuepress/awesome-vuepress#plugins)

@@ -14,7 +14,7 @@ Vuepress Plugin Qrcode是一个展示当前网址二维码供移动设备扫描�
 
 ## 文档
 
-- [官方Demo](https://openhacking.github.io/VuePressPluginQRCodeDemo/)
+- [官方Demo](https://openhacking.github.io/vuepress-template/zh/)
 - [社区案例](https://dushusir.github.io/blog/)
 
 ![Demo](./assets/vuepress-plugin-qrcode-demo.png)

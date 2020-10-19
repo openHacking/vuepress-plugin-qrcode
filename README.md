@@ -14,7 +14,7 @@ Vuepress Plugin Qrcode is a Vuepress plugin that displays the QR code of the cur
 
 ## Documentation
 
-- [Official Demo](https://openhacking.github.io/VuePressPluginQRCodeDemo/)
+- [Official Demo](https://openhacking.github.io/vuepress-template/)
 - [Community case](https://dushusir.github.io/blog/)
 
 ![Demo](./assets/vuepress-plugin-qrcode-demo.png)

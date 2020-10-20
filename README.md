@@ -65,6 +65,17 @@ Set the size of the QR code, the possible values are
     - `80`: Represents 80px * 80px
     - `120`: Represents 120px * 120px
 
+## Sponsor
+
+If you think this project is useful or inspiring for you, you can ask the author for a glass of juice:
+
+- [Paypal me](https://paypal.me/AlexLiu518)
+
+And contact the author to add to the sponsors list: alexliu518@gmail.com
+
+## Sponsors List
+- [Dushusir](https://dushusir.github.io)
+
 ## Resources
 
 - [vuepress](https://vuepress.vuejs.org/)

@@ -65,6 +65,19 @@ module.exports = {
     - `80`：代表80px * 80px
     - `120`：代表120px * 120px
 
+## 赞助
+
+如果你觉得这个项目对你有用或者有所启发，可以请作者喝杯果汁：
+| 微信捐赠  | 支付宝捐赠
+|---|---|
+| <img src="./assets/wechat.jpg" width="140" />| <img src="./assets/alipay.jpg" width="140" />
+
+并联系作者加到赞助者列表： alexliu518@gmail.com
+
+## 赞助者列表
+
+- [Dushusir](https://dushusir.github.io)
+
 ## 资源
 
 - [vuepress](https://vuepress.vuejs.org/)

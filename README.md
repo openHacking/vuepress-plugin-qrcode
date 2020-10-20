@@ -70,10 +70,12 @@ Set the size of the QR code, the possible values are
 If you think this project is useful or inspiring for you, you can ask the author for a glass of juice:
 
 - [Paypal me](https://paypal.me/AlexLiu518)
+- [Buy me a coffee](https://www.buymeacoffee.com/openHacking)
 
 And contact the author to add to the sponsors list: alexliu518@gmail.com
 
 ## Sponsors List
+
 - [Dushusir](https://dushusir.github.io)
 
 ## Resources

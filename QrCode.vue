@@ -21,9 +21,9 @@ export default {
   },
   data() {
     return {
-      show: false,
-      qrcodeText: "",
-      qrSize: 100,
+      show: false, //show or hide
+      qrcodeText: "", // url
+      qrSize: 100, //square size
     };
   },
   props: {
@@ -37,7 +37,9 @@ export default {
     },
   },
   mounted() {
+    // tranform size
     let newV = this.size;
+
     let realSize = "";
     switch (newV) {
       case "small":

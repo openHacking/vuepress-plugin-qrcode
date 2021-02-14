@@ -1,6 +1,6 @@
 {
   "name": "vuepress-plugin-qrcode",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "vuepress plugin qrcode",
   "author": "alexliu518@gmail.com",
   "main": "index.js",

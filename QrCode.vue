@@ -1,6 +1,6 @@
 <template>
   <div class="qrcodeBtn" @mousedown.stop="showQrCode">
-    {{ labelText || "Mobile Read" }}
+    <span class="labelText">{{ labelText || "Mobile Read" }}</span>
     <qrcode-vue
       id="qrcodeContainer"
       v-if="show"

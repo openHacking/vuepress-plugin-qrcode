@@ -23,7 +23,7 @@ export default {
       });
     } else if (qrcodeBtn != null) {
       this.transformLabel();
-      this.qr.$el.innerText = this.currentLabel;
+      this.qr.$el.querySelector('.labelText').innerText = this.currentLabel;
     }
   },
   mounted() {

@@ -28,13 +28,13 @@ yarn add -D vuepress-plugin-qrcode
 
 ## Usage
 
-Use without configuration
+- Case One: Use without configuration
 ```js
 module.exports = {
   plugins: ['qrcode']
 }
 ```
-Or, set optional configuration
+- Case Two: set optional configuration
 ```js
 module.exports = {
   plugins: [
@@ -45,25 +45,66 @@ module.exports = {
   ]
 }
 ```
-
+- Case Three: Multi-language configuration
+```js
+module.exports = {
+  plugins: [
+    ['qrcode',{
+      // "/" and "/zh/" correspond to the path set by locales
+        labelText: {
+          "/": "QRCode", 
+          "/zh/": "二维码",
+        },
+        size:'small'
+    }]
+  ]
+}
+```
 ## Configuration(optional)
 
 ### labelText
 - Type: `string`
 - Default: `Mobile Read`   
-Click the button to pop up the QR code, the text of the button
+Click the button to pop up the QR code, the text of the button.
+
+  + Directly set `labelText` as a string, for example:
+  ```js
+  labelText:'QRCode'
+  ```
+
+  + Or configure different displays according to the site's multi-language configuration, such as:
+  ```js
+  labelText: {
+    "/": "QRCode",
+    "/zh/": "二维码",
+  }
+  ```
+
+  > Refer to [Vuepress Internationalization](https://vuepress.vuejs.org/guide/i18n.html#internationalization)
 
 ### size
 - Type: `string | number`
 - Default: `small`    
-Set the size of the QR code, the possible values are
-    - `small`: Represents 100px * 100px
-    - `medium`: Represents 150px * 150px
-    - `big`: Represents 200px * 200px
+Set the size of the QR code.
 
-    Or set a specific value you think is appropriate, such as
-    - `80`: Represents 80px * 80px
-    - `120`: Represents 120px * 120px
+  + Can be a string, possible values are:
+    - `small`: stands for 100px * 100px
+    - `medium`: stands for 150px * 150px
+    - `big`: stands for 200px * 200px
+
+    such as:
+    ```js
+    size:'big'
+    ```
+
+  + Or set the specific value you think is appropriate, the recommended values are:
+    - `80`: stands for 80px * 80px
+    - `120`: stands for 120px * 120px
+
+    such as:
+    ```js
+    size: 120
+    ```
 
 ## Sponsor
 

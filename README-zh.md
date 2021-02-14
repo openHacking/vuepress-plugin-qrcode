@@ -28,13 +28,13 @@ yarn add -D vuepress-plugin-qrcode
 
 ## 使用
 
-不加配置直接使用
+- 案例一：不加配置直接使用
 ```js
 module.exports = {
   plugins: ['qrcode']
 }
 ```
-或者，设置可选配置
+- 案例二：设置可选配置
 ```js
 module.exports = {
   plugins: [
@@ -45,25 +45,66 @@ module.exports = {
   ]
 }
 ```
+- 案例三：多语言配置
+```js
+module.exports = {
+  plugins: [
+    ['qrcode',{
+      // "/"和"/zh/"对应locales设置的路径
+        labelText: {
+          "/": "QRCode", 
+          "/zh/": "二维码",
+        },
+        size:'small'
+    }]
+  ]
+}
+```
 
 ## 配置(可选)
 
 ### labelText
-- Type: `string`
-- Default: `Mobile Read`   
-点击按钮弹出二维码，按钮的文字
+- 类型: `string ｜ object`
+- 默认值: `Mobile Read`   
+点击按钮弹出二维码，按钮的文字。
+
+  + 可以直接`labelText`为一个字符串，比如：
+  ```js
+  labelText: '二维码'
+  ```
+
+  + 或者根据站点多语言配置不同的显示，比如：
+  ```js
+  labelText: {
+    "/": "QRCode", 
+    "/zh/": "二维码",
+  }
+  ```
+
+  > 参考 [vuepress多语言支持](https://vuepress.vuejs.org/zh/guide/i18n.html#%E5%A4%9A%E8%AF%AD%E8%A8%80%E6%94%AF%E6%8C%81)
 
 ### size
-- Type: `string | number`
-- Default: `small`    
-设置二维码大小，可能的值有
-    - `small`：代表100px * 100px
-    - `medium`：代表150px * 150px
-    - `big`：代表200px * 200px
+- 类型: `string | number`
+- 默认值: `small`    
+设置二维码大小
+    + 可以为一个字符串，可能的值有：
+      - `small`：代表100px * 100px
+      - `medium`：代表150px * 150px
+      - `big`：代表200px * 200px
 
-    或者设定你认为合适的具体数值，比如
-    - `80`：代表80px * 80px
-    - `120`：代表120px * 120px
+      比如：
+      ```js
+      size:'big'
+      ```
+    
+    + 或者设定你认为合适的具体数值，推荐的值有：
+      - `80`：代表80px * 80px
+      - `120`：代表120px * 120px
+
+      比如：
+      ```js
+      size: 120
+      ```
 
 ## 赞助
 

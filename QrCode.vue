@@ -24,6 +24,7 @@ export default {
       show: false, //show or hide
       qrcodeText: "", // url
       qrSize: 100, //square size
+      channelQR:''
     };
   },
   props: {
@@ -34,6 +35,10 @@ export default {
     size: {
       type: [String, Number],
       default: "",
+    },
+    channel: {
+      type: Boolean,
+      default: false,
     },
   },
   mounted() {
@@ -69,6 +74,11 @@ export default {
     }
     this.qrSize = realSize;
 
+    // handle channel 
+    if(this.channel){
+      this.channelQR = (location.href.indexOf('?') > -1 ? '&channel=qrcode' : '?channel=qrcode')
+    }
+
     document.documentElement.addEventListener("mousedown", () => {
       this.show = false;
     });
@@ -79,7 +89,7 @@ export default {
 
       if (this.show) {
         this.$nextTick(() => {
-          this.qrcodeText = location.href;
+          this.qrcodeText = location.href + this.channelQR;
         });
       }
     },

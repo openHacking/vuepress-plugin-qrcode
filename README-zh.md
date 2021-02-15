@@ -34,13 +34,13 @@ module.exports = {
   plugins: ['qrcode']
 }
 ```
-- 案例二：设置可选配置
+- 案例二：设置可选配置，显示的文本和二维码大小
 ```js
 module.exports = {
   plugins: [
     ['qrcode',{
-        labelText:'Mobile Read',
-        size:'small'
+        labelText:'Mobile Read', //显示的文本
+        size:'small' // 二维码大小
     }]
   ]
 }
@@ -50,12 +50,22 @@ module.exports = {
 module.exports = {
   plugins: [
     ['qrcode',{
-      // "/"和"/zh/"对应locales设置的路径
+        // "/"和"/zh/"对应locales设置的路径
         labelText: {
           "/": "QRCode", 
           "/zh/": "二维码",
         },
-        size:'small'
+        size:'small' // 二维码大小
+    }]
+  ]
+}
+```
+- 案例四：地址添加参数，标记来自二维码
+```js
+module.exports = {
+  plugins: [
+    ['qrcode',{
+        channel:true, //添加标记
     }]
   ]
 }
@@ -105,6 +115,14 @@ module.exports = {
       ```js
       size: 120
       ```
+
+### channel
+- 类型: `boolean`
+- 默认值: `false`    
+是否在二维码地址尾部添加参数，用于标记访问来自二维码，便于统计手机扫描的访问效果，比如：
+  ```js
+  channel:true
+  ```
 
 ## 赞助
 

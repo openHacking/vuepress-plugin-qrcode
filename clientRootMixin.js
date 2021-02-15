@@ -34,6 +34,7 @@ export default {
     this.transformLabel();
     qr.labelText = this.currentLabel;
     qr.size = size;
+    qr.channel = channel;
     qr.$mount();
 
     this.qr = qr;

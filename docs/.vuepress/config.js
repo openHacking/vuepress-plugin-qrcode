@@ -27,10 +27,11 @@ module.exports = {
         //We provide two configurations:labelText,size
         // labelText: "Mobile Read",
         labelText: {
-          "/zh/": " 二维码 ",
+          "/zh/": "二维码",
           "/": "QRCode",
         },
-        // size:100
+        size:100,
+        channel:true
       },
     ],
   ],

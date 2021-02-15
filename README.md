@@ -34,13 +34,13 @@ module.exports = {
   plugins: ['qrcode']
 }
 ```
-- Case Two: set optional configuration
+- Case Two: set optional configuration,displayed text and QR code size
 ```js
 module.exports = {
   plugins: [
     ['qrcode',{
-        labelText:'Mobile Read',
-        size:'small'
+        labelText:'Mobile Read', // displayed text
+        size:'small' // QR code size
     }]
   ]
 }
@@ -50,16 +50,26 @@ module.exports = {
 module.exports = {
   plugins: [
     ['qrcode',{
-      // "/" and "/zh/" correspond to the path set by locales
+        // "/" and "/zh/" correspond to the path set by locales
         labelText: {
           "/": "QRCode", 
           "/zh/": "二维码",
         },
-        size:'small'
+        size:'small' // QR code size
     }]
   ]
 }
 ```
+- Case Four: Adding parameters to the address, the mark comes from the QR code
+```js
+module.exports = {
+  plugins: [
+    ['qrcode',{
+        channel:true, //Add mark
+    }]
+  ]
+}
+
 ## Configuration(optional)
 
 ### labelText
@@ -105,6 +115,14 @@ Set the size of the QR code.
     ```js
     size: 120
     ```
+
+### channel
+- Type: `boolean`
+- Default: `false`    
+Whether to add a parameter at the end of the QR code address to mark that the access comes from the QR code, so as to facilitate statistics on the access effect of mobile phone scanning, such as:
+  ```js
+  channel:true
+  ```
 
 ## Sponsor
 

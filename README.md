@@ -30,12 +30,14 @@ yarn add -D vuepress-plugin-qrcode
 
 - Case One: Use without configuration
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: ['qrcode']
 }
 ```
 - Case Two: set optional configuration,displayed text and QR code size
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: [
     ['qrcode',{
@@ -47,6 +49,7 @@ module.exports = {
 ```
 - Case Three: Multi-language configuration
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: [
     ['qrcode',{
@@ -62,6 +65,7 @@ module.exports = {
 ```
 - Case Four: Adding parameters to the address, the mark comes from the QR code
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: [
     ['qrcode',{
@@ -69,6 +73,7 @@ module.exports = {
     }]
   ]
 }
+```
 
 ## Configuration(optional)
 

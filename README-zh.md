@@ -30,12 +30,14 @@ yarn add -D vuepress-plugin-qrcode
 
 - 案例一：不加配置直接使用
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: ['qrcode']
 }
 ```
 - 案例二：设置可选配置，显示的文本和二维码大小
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: [
     ['qrcode',{
@@ -47,6 +49,7 @@ module.exports = {
 ```
 - 案例三：多语言配置
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: [
     ['qrcode',{
@@ -62,6 +65,7 @@ module.exports = {
 ```
 - 案例四：地址添加参数，标记来自二维码
 ```js
+// .vuepress/config.js
 module.exports = {
   plugins: [
     ['qrcode',{

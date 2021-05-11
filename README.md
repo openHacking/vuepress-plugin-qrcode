@@ -12,6 +12,8 @@ English| [简体中文](./README-zh.md)
 
 Vuepress Plugin Qrcode is a Vuepress plugin that displays the QR code of the current URL for mobile devices to scan.
 
+⭐Just wanting a star😆
+
 ## Documentation
 
 - [Official Demo](https://openhacking.github.io/vuepress-template/)

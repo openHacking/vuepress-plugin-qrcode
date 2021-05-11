@@ -2,6 +2,7 @@
 
 Vuepress Plugin Qrcode
 
+![npm download](https://img.shields.io/npm/dt/vuepress-plugin-qrcode)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/openHacking/vuepress-plugin-qrcode?style=flat-square)
 [![GitHub license](https://img.shields.io/github/license/openHacking/vuepress-plugin-qrcode?style=flat-square)](https://github.com/openHacking/vuepress-plugin-qrcode)
 </div>
